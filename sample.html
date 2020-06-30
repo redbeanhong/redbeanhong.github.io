@@ -7,6 +7,8 @@
     <title>wine</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
     <style>
         * {
             box-sizing: border-box;
@@ -35,16 +37,17 @@
             background-color: rgba(5, 5, 5, 0.7);
         }
 
+        /* nav-btn被點擊後，底色變成黑色 */
         .nav-pills>li>a.active {
             background-color: black !important;
         }
 
-        #v-pills-home {
+        /* #v-pills-home {
             background-image: url('./img/bcg.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-        }
+        } */
 
         .pct-logo>img {
             width: 100px;
@@ -84,7 +87,7 @@
                     </div>
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 col-lg-6">
+                            <div class="col-12 col-lg-6 ">
                                 <div class="w-100 h-100 p-3">
                                     <ul class="navbar-btngroup w-100 text-warning nav flex-column nav-pills"
                                         id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -176,13 +179,21 @@
     <main>
         <div class="tab-content bg-dark" id="v-pills-tabContent">
             <!-- 首頁 -->
+
             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                 <div class="sample">
                     <img src="./img/00.工作區/indexx (1).jpg" alt="">
-                    <img src="./img/00.工作區/indexx (2).jpg" alt="">
-                    <img src="./img/00.工作區/indexx (3).jpg" alt="">
-                    <img src="./img/00.工作區/indexx (4).jpg" alt="">
-                    <img src="./img/00.工作區/indexx (5).jpg" alt="">
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper sample">
+                        <div class="swiper-slide"><img src="./img/00.工作區/indexx (2).jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/00.工作區/indexx (3).jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/00.工作區/indexx (4).jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/00.工作區/indexx (5).jpg" alt=""></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
 
@@ -193,10 +204,15 @@
 
             <!-- 酒莊介紹 -->
             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                <div class="sample">
-                    <img src="./img/00.工作區/special (1).jpg" alt="">
-                    <img src="./img/00.工作區/special (2).jpg" alt="">
-                    <img src="./img/00.工作區/special (3).jpg" alt="">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper sample">
+                        <div class="swiper-slide"><img src="./img/00.工作區/special (1).jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/00.工作區/special (2).jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/00.工作區/special (3).jpg" alt=""></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
 
@@ -212,10 +228,15 @@
 
             <!-- 酒莊環境 -->
             <div class="tab-pane fade" id="v-pills-area" role="tabpanel" aria-labelledby="v-pills-area-tab">
-                <div class="sample">
-                    <img src="./img/00.工作區/area (2).jpg" alt="">
-                    <img src="./img/00.工作區/area (3).jpg" alt="">
-                    <img src="./img/00.工作區/area (4).jpg" alt="">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper sample">
+                        <div class="swiper-slide"><img src="./img/00.工作區/area (1).jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/00.工作區/area (2).jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/00.工作區/area (3).jpg" alt=""></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
 
@@ -245,6 +266,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
     <script>
         //點擊navbar連結後，選單會自動收合
@@ -254,6 +276,15 @@
                     ;
             });
         });
+
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+
 
 
     </script>
