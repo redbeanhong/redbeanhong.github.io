@@ -1,0 +1,543 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 微軟正黑體;
+}
+
+body {
+    margin: 0;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.field{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    width: 100%;
+    height: 80px;
+    line-height: 40px;
+    padding: 20px;
+}
+
+.pct{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mask{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    position: relative;
+    z-index: 99;
+}
+
+.mask-2{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: unset;
+    text-align: center;
+    font-family: 宋体;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    font-family: 宋体;
+}
+
+h3 {
+    font-family: 宋体;
+    text-align: center;
+    font-size: 60px;
+    line-height: 300px;
+    margin: unset;
+    padding: unset;
+    color: white;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-gray{
+    background-color: rgb(237, 237, 237);
+}
+
+.bar-top{
+    width: 100%;
+    height: 130px;
+    background-image: url('../img/130p-white.png')
+}
+
+.bar-white{
+    width: 100%;
+    height: 200px;
+    background-image: url('../img/200p-white.png');
+}
+
+.bar-gray{
+    width: 100%;
+    height: 200px;
+    background-image: url('../img/200p-white-r.png');
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/banner.jpg');
+}
+
+header .main-view{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header .main-view nav{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+header .main-view nav .logo{
+    width: 100px;
+    height: 100%;
+    background-image: url('../img/logo-1.jpg');
+    margin: 0 0 0 20px;
+}
+
+header .main-view nav .btn-group{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .main-view nav .btn-group a{
+    width: 100px;
+    height: 100%;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+}
+
+header .main-view nav .btn-group a:hover{
+    background-color: rgba(71, 71, 71, 0.3);
+}
+
+header .main-view .main-line{
+    width: 100%;
+    height: 160px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 0 80px 0;
+}
+
+header .main-view .main-line .logo{
+    width: auto;
+    height: 100%;
+    background-image: url('../img/logo去背.png');
+    background-size: contain;
+}
+
+main{
+    width: 100%;
+}
+
+main #section-1 .container .field .pct{
+    width: 100%;
+    height: 400px;
+}
+
+main #section-1 .container .field .pct:nth-child(1){
+    background-image: url('../img/about-us-1.jpg');
+}
+
+main #section-1 .container .field .pct:nth-child(2){
+    background-image: url('../img/about-us-2.jpg');
+}
+
+main #section-2{
+    background-image: url('../img/s2-wedding.jpg');
+    color: white;
+}
+main #section-2 .container{
+    padding: 0 0 50px 0;
+}
+
+main #section-2 .container .content .field .card{
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #section-2 .container .content .field .card .pct{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(237, 237, 237);
+}
+
+main #section-2 .container .content .field .card .text{
+    width: calc(100% - 180px);
+    padding: 20px;
+} 
+
+
+main #section-2 .container .content .field .card .photo {
+    background-image: url('../img/photo.png');
+}
+
+main #section-2 .container .content .field .card .studio {
+    background-image: url('../img/studio.png');
+}
+
+main #section-2 .container .content .field .card .dress {
+    background-image: url('../img/dress.png');
+}
+
+main #section-2 .container .content .field .card .service {
+    background-image: url('../img/service.png');
+}
+
+main #section-3 .container .title{
+    margin: 0 0 50px 0;
+}
+
+main #section-3 .container .field .card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main #section-3 .container .field:nth-child(2){
+    margin-top: 50px;
+}
+
+main #section-3 .container .field .card .pct{
+    width: 100%;
+    height: 300px;
+}
+
+main #section-3 .container .field .card .pct:hover .mask-2{
+    display: block;
+}
+
+main #section-3 .container .wedding{
+    background-image: url('../img/s3-wedding.jpg');
+}
+
+main #section-3 .container .family{
+    background-image: url('../img/s3-family.jpg');
+}
+
+main #section-3 .container .friend{
+    background-image: url('../img/s3-friend.jpg');
+}
+
+main #section-3 .container .baby{
+    background-image: url('../img/s3-baby.jpg');
+}
+
+main #section-4 {
+    width: 100%;
+    background-image: url('../img/s4-cover.jpg');
+    background-position: top;
+    background-size: cover;
+}
+
+main #section-4 .mask .bar-white-rr{
+    width: 100%;
+    height: 200px;
+    background-image: url('../img/200p-white-rr.png');
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+main #section-4 .mask .container{
+    height: 200px;
+    justify-content: flex-end;
+}
+
+main #section-4 .mask .container .icon-group{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main #section-4 .mask .container .icon-group .text{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    text-align: center;
+}
+
+main #section-4 .mask .container .icon-group .icon {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+main #section-4 .mask .container .icon .fb {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url('../img/FB.png');
+    background-size: cover;
+    background-position: center;
+}
+
+main #section-4 .mask .container .icon .ig {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 20px;
+    background-image: url('../img/IG.png');
+    background-size: cover;
+    background-position: center;
+}
+
+main #section-4 .mask .container .icon .map {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url('../img/map.png');
+    background-size: cover;
+    background-position: center;
+}
+
+main #section-4 .pct-group{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main #section-4 .pct-group .pct{
+    width: 12.5%;
+    height: 100%;
+}
+
+main #section-4 .pct-group .img-1{
+    background-image: url('../img/s4-pct-1.jpg');
+}
+
+main #section-4 .pct-group .img-2{
+    background-image: url('../img/s4-pct-2.jpg');
+}
+
+main #section-4 .pct-group .img-3{
+    background-image: url('../img/s4-pct-3.jpg');
+}
+
+main #section-4 .pct-group .img-4{
+    background-image: url('../img/s4-pct-4.jpg');
+}
+
+main #section-4 .pct-group .img-5{
+    background-image: url('../img/s4-pct-5.jpg');
+}
+
+main #section-4 .pct-group .img-6{
+    background-image: url('../img/s4-pct-6.jpg');
+}
+
+main #section-4 .pct-group .img-7{
+    background-image: url('../img/s4-pct-7.jpg');
+}
+
+main #section-4 .pct-group .img-8{
+    background-image: url('../img/s4-pct-8.jpg');
+}
+
+footer{
+    width: 100%;
+    min-height: 70px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+}
+
+
+#gototop {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 92px;
+    background-color: pink;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    z-index: 97;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    border: 5px solid white;
+}
+
+#gototop:active {
+    transform: rotate(30deg);
+}
+
+@media(max-width:1140px){
+    .container{
+        width: 960px;
+    }
+
+    main #section-4 .pct-group{
+        height: 400px;
+    }
+
+    main #section-4 .pct-group .pct{
+        width: 25%;
+        height: 50%;
+    }
+
+    #gototop {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+@media(max-width:960px){
+    .container{
+        width: 100%;
+    }
+
+    .field{
+        width: 100%;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+
+    header .main-view nav .logo {
+        margin: 0 0 0 calc(50% - 50px);
+    }
+
+    header .main-view nav .btn-group {
+        width: 100px;
+        justify-content: unset;
+        align-items: unset;
+        background-image: url('../img/menu.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex-direction: column;
+    }
+
+    header .main-view nav .btn-group a{
+        position: relative;
+        bottom: -70px;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    header .main-view nav .btn-group a:hover{
+        background-color: rgba(71, 71, 71, 0.3);
+    }
+
+    header .main-view nav .btn-group:hover a{
+        display: block;
+    }
+    main #section-1{
+        margin: 0 0 140px 0;
+    }
+
+    main #section-1 .container .field .text{
+        padding: 30px;
+    }
+
+    main #section-2 .container .content{
+        flex-wrap: wrap;
+    }
+
+    main #section-3 .container .field:nth-child(2){
+        margin: 20px 0 0 0;
+    }
+
+    main #section-3 .container .field .card .pct .mask-2{
+        display: block;
+    }
+
+    main #section-3 .container .field .card .pct .mask-2 h3{
+        font-size: 30px;
+    }
+
+    main #section-3 .container .title{
+        margin: 0 0 0 0;
+    }
+
+    main #section-4 .mask .container{
+        justify-content: center;
+    }
+
+    main #section-4 .mask .container .icon-group{
+        width: 100%;
+    }
+
+    .bar-white{
+        width: 100%;
+        height: 100px;
+        background-image: url('../img/100p-white.png');
+    }
+
+    #gototop {
+        width: 70px;
+        height: 70px;
+        font-size: 14px;
+        line-height: 62px;
+    }
+}
