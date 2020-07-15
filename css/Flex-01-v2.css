@@ -473,7 +473,7 @@ footer{
         justify-content: unset;
         align-items: unset;
         background-image: url('../img/menu.png');
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         flex-direction: column;
     }
