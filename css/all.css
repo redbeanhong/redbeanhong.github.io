@@ -1,0 +1,378 @@
+@charset "UTF-8";
+/* ---all--- */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Tahoma", "微軟正黑體";
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Tahoma", "微軟正黑體";
+  background-color: #f1f1f3;
+  font-weight: 900;
+}
+
+/* 字型區 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: "Brush Script MT", "微軟正黑體";
+  text-align: center;
+  margin: 100px 0;
+}
+
+h1 span {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 48px;
+  font-family: "Brush Script MT", "微軟正黑體";
+}
+
+h2::after {
+  display: block;
+  margin: 40px 0;
+  border-bottom: 2px dashed #393333;
+  content: "";
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.small-title {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+/* 顏色區 */
+.color-light {
+  color: #f1f1f3;
+}
+
+.color-dark {
+  color: #393333;
+}
+
+.bg-dark {
+  background-color: #393333;
+}
+
+.bg-light {
+  background-color: #f1f1f3;
+}
+
+/* 左右留白 */
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.bland-bilateral {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.course-bland {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+/* 區塊下推間距 */
+.area-margin {
+  margin-bottom: 40px;
+}
+
+.title-margin {
+  margin-bottom: 20px;
+}
+
+/* 按鈕物件 */
+.btn {
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #dcb58c;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #f79d3c;
+}
+
+.a-potision {
+  display: block;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: -100px;
+  left: 0;
+}
+
+.banner {
+  background-image: url("../img/banner_photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar a {
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  border-top: 5px solid rgba(44, 44, 44, 0);
+  border-bottom: 5px solid rgba(44, 44, 44, 0);
+}
+
+.navbar a:hover {
+  border-bottom: 5px solid #f1f1f3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.github {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #dcb58c;
+  width: 200px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.github p {
+  font-size: 20px;
+}
+
+.github:hover {
+  background-color: #f79d3c;
+}
+
+.about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-content .about-txt {
+  width: 60%;
+}
+
+.about-content .about-txt p:nth-child(2) {
+  margin: 20px 0;
+}
+
+.about-content .about-photo {
+  width: 40%;
+}
+
+.about-content .about-photo .photo-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: url("../img/photo.jpg");
+  background-size: cover;
+  margin: auto;
+}
+
+.skill {
+  position: relative;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills .skills-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 20px;
+  width: 25%;
+}
+
+.skills .skills-item h3 {
+  margin-top: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#works {
+  background-color: #f1f1f3;
+  padding-bottom: 80px;
+}
+
+#works p {
+  /*display: none;*/
+  margin-bottom: 30px;
+  line-height: 230%;
+}
+
+#works p,
+#works .tools {
+  width: 100%;
+}
+
+.card-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  margin-bottom: 40px;
+  min-height: 550px;
+  width: calc(50% - 20px);
+  overflow: auto;
+  cursor: pointer;
+  background-color: #f79d3c;
+}
+
+.card .card-content {
+  position: absolute;
+  padding: 15px;
+  top: 0;
+}
+
+.card .card-content > * {
+  display: none;
+}
+
+.card .card-content span {
+  margin-left: 10px;
+}
+
+.card .card-content .tools {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.card .card-content .tools li {
+  margin-top: 5px;
+  background-color: #dcb58c;
+  margin-right: 10px;
+  padding: 10px;
+  float: left;
+}
+
+.card .card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .card-img .heading {
+  padding: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.card .card-img .heading span {
+  color: #635757;
+  display: block;
+  margin: 40px 0px;
+}
+
+.card:hover img {
+  opacity: 0;
+  -webkit-transition: opacity 0.32s;
+  transition: opacity 0.32s;
+}
+
+.card:hover .card-content {
+  top: 140px;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
+}
+
+.card:hover .heading span {
+  -webkit-transform: rotate(180deg);
+  position: relative;
+  top: -80px;
+  left: -30px;
+  color: rgba(4, 14, 22, 0.83);
+}
+
+.card:hover .card-content > * {
+  display: block;
+}
+
+.card:hover .heading {
+  position: absolute;
+  top: -60px;
+  -webkit-transition: top 0.9s;
+  transition: top 0.9s;
+}
+
+#contact {
+  padding: 0 0 100px 0;
+}
+
+#contact .contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=all.css.map */

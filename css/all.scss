@@ -1,0 +1,227 @@
+@import "./style_guide";
+.a-potision{
+    display: block;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
+// ---------BANNER & NAV---------
+.banner {
+    background-image: url("../img/banner_photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    a {
+        display: block;
+        padding: 20px;
+        font-size: 20px;
+        border-top: 5px solid rgba(44, 44, 44, 0);
+        border-bottom: 5px solid rgba(44, 44, 44, 0);
+
+        &:hover {
+            border-bottom: 5px solid $color-light;
+            transition: 0.5s;
+        }
+    }
+}
+
+.github {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-important;
+    width: 200px;
+    border-radius: 5px;
+    padding: 20px;
+    p {
+        font-size: 20px;
+    }
+}
+.github:hover {
+    background-color: $color-primary;
+}
+
+// ---------END OF BANNER & NAV---------
+
+// ---------ABOUT---------
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .about-txt {
+        width: 60%;
+        & p:nth-child(2){
+            margin: 20px 0 ;
+        }
+    }
+
+    .about-photo {
+        width: 40%;
+
+        .photo-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-image: url("../img/photo.jpg");
+            background-size: cover;
+            margin: auto;
+        }
+    }
+}
+
+// ---------END OF ABOUT---------
+
+// ---------SKILL---------
+.skill{
+    position: relative;
+}
+.skills {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .skills-item {
+        display: flex;
+        justify-content: center;
+        padding: 20px 20px;
+        width: 25%;
+        
+        h3{
+            margin-top: 10px;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+}
+
+// ---------END OF SKILL---------
+
+// ---------WORKS---------
+
+#works {
+    background-color: $color-normal;
+    padding-bottom: 80px;
+
+    p {
+        /*display: none;*/
+        margin-bottom: 30px;
+        line-height: 230%;
+    }
+
+    p,
+    .tools {
+        width: 100%;
+    }
+}
+
+.card-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    margin-bottom: 40px;
+    min-height: 550px;
+    width: calc(50% - 20px);
+    overflow: auto;
+    cursor: pointer;
+    background-color: $color-primary;
+
+    .card-content {
+        position: absolute;
+        padding: 15px;
+        top: 0;
+
+        & > * {
+            display: none;
+        }
+
+        span {
+            margin-left: 10px;
+        }
+
+        .tools {
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        .tools li {
+            margin-top: 5px;
+            background-color: $color-important;
+            margin-right: 10px;
+            padding: 10px;
+            float: left;
+        }
+    }
+
+    .card-img {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .heading {
+            padding: 15px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .heading span {
+            color: #635757;
+            display: block;
+            margin: 40px 0px;
+        }
+    }
+
+    &:hover img {
+        opacity: 0;
+        transition: opacity 0.32s;
+    }
+
+    &:hover .card-content {
+        top: 140px;
+        transition: top 0.5s;
+    }
+
+    &:hover .heading span {
+        -webkit-transform: rotate(180deg);
+        position: relative;
+        top: -80px;
+        left: -30px;
+        color: rgba(4, 14, 22, 0.83);
+    }
+
+    &:hover .card-content > * {
+        display: block;
+    }
+
+    &:hover .heading {
+        position: absolute;
+        top: -60px;
+        transition: top 0.9s;
+    }
+}
+// ---------END OF WORKS---------
+
+// ---------CONTACT---------
+#contact{
+    padding: 0 0 100px 0;
+
+    .contact-content{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+// ---------END OF CONTACT---------

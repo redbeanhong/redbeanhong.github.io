@@ -1,0 +1,128 @@
+/* ---all--- */
+$color-important: #dcb58c;
+$color-primary: #f79d3c;
+$color-normal: #f1f1f3;
+$color-light: #f1f1f3;
+$color-dark: #393333;
+$font-important: "Brush Script MT", "微軟正黑體";
+$font-normail: "Tahoma", "微軟正黑體";
+
+* {
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: $font-normail;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: $font-normail;
+    background-color: #f1f1f3;
+    font-weight: 900;
+}
+
+/* 字型區 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: $font-important;
+    text-align: center;
+    margin: 100px 0;
+
+    span {
+        font-size: 30px;
+    }
+}
+
+h2 {
+    font-size: 48px;
+    font-family: $font-important;
+
+    &::after {
+        display: block;
+        margin: 40px 0;
+        border-bottom: 2px dashed $color-dark;
+        content: "";
+    }
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.small-title {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+/* 顏色區 */
+.color-light {
+    color: $color-light;
+}
+
+.color-dark{
+    color: $color-dark;
+}
+
+.bg-dark{
+    background-color:$color-dark;
+}
+
+.bg-light{
+    background-color: $color-light;
+}
+
+/* 左右留白 */
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.bland-bilateral {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.course-bland {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/* 區塊下推間距 */
+.area-margin {
+    margin-bottom: 40px;
+}
+
+.title-margin {
+    margin-bottom: 20px;
+}
+
+/* 按鈕物件 */
+.btn {
+    font-size: 20px;
+    color: #ffffff;
+    background-color: $color-important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: $color-primary;
+}

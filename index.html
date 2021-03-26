@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>紅豆的個人簡歷</title>
+        <!-- meta最後補補補補 -->
+        <!-- aosCss -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/css-reset.css" />
+        <link rel="stylesheet" href="./css/all.css" />
+        <!-- freeIcon -->
+        <script
+            src="https://kit.fontawesome.com/3e71f149d4.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- skillIcon -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+        <!-- aos -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+    <body>
+        <!-- BANNER -->
+        <section class="banner color-light area-margin">
+            <div class="container">
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="#about-position">About me</a></li>
+                        <li><a href="#skill-position">Skill</a></li>
+                        <li><a href="#works-position">My works</a></li>
+                        <li><a href="#contact-position">Contact</a></li>
+                    </ul>
+                </nav>
+                <h1>Redbean's<br /><span>紅豆的個人簡歷</span></h1>
+                <a
+                    class="github"
+                    href="https://github.com/redbeanhong?tab=repositories"
+                    target="_blank" 
+                >
+                    <img src="./img/GitHub-Mark.png" alt="" />
+                    <p>我的github</p>
+                </a>
+            </div>
+        </section>
+        <!-- END OF BANNER -->
+
+        <!-- ABOUT -->
+        <section
+            id="about"
+            class="area-margin"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+        >
+            <a href="#" id="about-position" class="a-potision"></a>
+            <div class="container">
+                <h2>About me</h2>
+                <div class="about-content">
+                    <div class="about-photo">
+                        <div class="photo-img"></div>
+                    </div>
+                    <div class="about-txt">
+                        <p>
+                            【關於我】<br />
+                            您好，我叫洪郁淳，是個性格開朗、做事積極、負有責任心的優質青年，總是在生活中找尋各種挑戰，擅於解決問題。目前正以成為一位前端工程師為目標，不斷自學增強職能，對程式碼的世界富有熱忱，每日愉快的進修成長。
+                        </p>
+                        <p>
+                            【學習歷程】<br />
+                            在宅經濟蓬勃發展的此時，資訊業是非常有前景的行業，我對於資訊業一直以來就很有興趣，對於資訊相關技術的學習都適應良好，故決心投入此行業深耕。目前參加勞動部開設之跨裝置企業平台與資料庫整合設計班課程增加自我職能，每日閒暇之餘複習上課內容，且閱讀相關書籍、網頁，期許自己成為資訊業的即戰力，成功轉職前端工程師。
+                        </p>
+                        <p>
+                            【職涯計畫】<br />
+                            我的短期目標是能更加熟練快速的用JS處理資料，加深對Vue的理解，擁有獨立完成小型專案之能力。中長期目標是希望兩年內獲得參與大型專案機會，如
+                            B2B、電商等，並持續向全端工程師之路邁進。或許這條路會有點艱辛，但我會用下班時間繼續不斷進修、學習，相信能克服困難，為公司團隊提供更好的效能。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END OF ABOUT -->
+
+        <!-- SKILL -->
+        <section
+            id="skill"
+            class="area-margin"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+        >
+            <a href="#" id="skill-position" class="a-potision"></a>
+            <div class="container">
+                <h2>Skill</h2>
+                <ul class="skills list-unstyled">
+                    <li class="skills-item">
+                        <figure>
+                            <canvas height="200" id="Vue" width="200"></canvas>
+                            <h3>Vue.js</h3>
+                            <p>能串接API並經過資料處理後，並用Vue管理畫面。</p>
+                        </figure>
+                    </li>
+                    <li class="skills-item">
+                        <figure>
+                            <canvas
+                                height="200"
+                                id="JavaScript"
+                                width="200"
+                            ></canvas>
+                            <h3>JavaScript ES6</h3>
+                            <p>
+                                對變數、函式、物件、迴圈及AJAX有基本理解，並可自行深入研究應用於專案上。
+                            </p>
+                        </figure>
+                    </li>
+                    <li class="skills-item">
+                        <figure>
+                            <canvas
+                                height="200"
+                                id="jQuery"
+                                width="200"
+                            ></canvas>
+                            <h3>jQuery</h3>
+                            <p>能使用jQuery進行動畫效果建置及操作DOM。</p>
+                        </figure>
+                    </li>
+                    <li class="skills-item">
+                        <figure>
+                            <canvas
+                                height="200"
+                                id="Bootstrap"
+                                width="200"
+                            ></canvas>
+                            <h3>Bootstrap</h3>
+                            <p>可應用Bootstrap元件、通用類別於製作RWD網頁。</p>
+                        </figure>
+                    </li>
+                    <li class="skills-item">
+                        <figure>
+                            <canvas height="200" id="Git" width="200"></canvas>
+                            <h3>Git</h3>
+                            <p>可應用基本功能，將專案push到Github。</p>
+                        </figure>
+                    </li>
+                    <li class="skills-item">
+                        <figure>
+                            <canvas height="200" id="SCSS" width="200"></canvas>
+                            <h3>SCSS</h3>
+                            <p>
+                                理解並使用Variables、Import、Mixins、Nesting於開發上。
+                            </p>
+                        </figure>
+                    </li>
+                    <li class="skills-item">
+                        <figure>
+                            <canvas
+                                height="200"
+                                id="webpack"
+                                width="200"
+                            ></canvas>
+                            <h3>webpack</h3>
+                            <p>
+                                使用webpack自動化編譯，完成多頁式網頁應用配置。
+                            </p>
+                        </figure>
+                    </li>
+                    <li class="skills-item">
+                        <figure>
+                            <canvas
+                                height="200"
+                                id="htmlCss"
+                                width="200"
+                            ></canvas>
+                            <h3>HTML5&CSS3</h3>
+                            <p>
+                                熟悉 HTML、CSS 語法，已有純手刻專案應用之經驗。
+                            </p>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- END OF SKILL -->
+
+        <!-- WORKS -->
+        <section
+            id="works"
+            class="area-margin"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+        >
+            <a href="#" id="works-position" class="a-potision"></a>
+            <div class="container">
+                <h2>My works</h2>
+                <ul class="card-group">
+                    <!-- CARD -->
+                    <li class="card">
+                        <!-- CARD-CONTENT -->
+                        <div class="card-content">
+                            <p>
+                                以AJAX載入中央氣象局之API資料，並透過JS處理資料後，以Vue輸出至畫面。
+                                並通過webpack產生各城市之頁面，及JS、SCSS的編譯與整合打包。
+                            </p>
+                            <h6>
+                                Tools<span><i class="fas fa-cog"></i></span>
+                            </h6>
+                            <ul class="tools">
+                                <li>Vue.js</li>
+                                <li>AJAX</li>
+                                <li>API</li>
+                                <li>JavaScript</li>
+                                <li>RWD</li>
+                                <li>SCSS</li>
+                                <li>webpack</li>
+                            </ul>
+                        </div>
+                        <!-- END OF CARD-CONTENT -->
+                        <div class="card-img">
+                            <img
+                                src="./img/myWork01.jpg"
+                                alt="Editorial Monitoring Automated Excel Screenshot"
+                            />
+                            <h4 class="heading">
+                                <span
+                                    ><i
+                                        class="fas fa-angle-double-down"
+                                    ></i></span
+                                >哈囉氣象預報
+                            </h4>
+                        </div>
+                    </li>
+                    <!-- END OF CARD -->
+                    <!-- CARD -->
+                    <li class="card">
+                        <!-- CARD-CONTENT -->
+                        <div class="card-content">
+                            <p>
+                                此為手刻RWD的多頁式婚紗形象網頁，以CSSFlexbox切板。
+                                並加入Parallax及animation效果，增加網頁互動性。
+                            </p>
+                            <h6>
+                                Tools<span><i class="fas fa-cog"></i></span>
+                            </h6>
+                            <ul class="tools">
+                                <li>jQuery</li>
+                                <li>SCSS</li>
+                                <li>Parallax</li>
+                            </ul>
+                        </div>
+                        <!-- END OF CARD-CONTENT -->
+                        <div class="card-img">
+                            <img
+                                src="./img/myWork02.jpg"
+                                alt="Editorial Monitoring Automated Excel Screenshot"
+                            />
+                            <h4 class="heading">
+                                <span
+                                    ><i class="fas fa-angle-double-down"></i
+                                ></span>
+                                FLOWERSTUDIO婚紗
+                            </h4>
+                        </div>
+                    </li>
+                    <!-- END OF CARD -->
+                    <!-- CARD -->
+                    <li class="card">
+                        <!-- CARD-CONTENT -->
+                        <div class="card-content">
+                            <p>
+                                此為小組RWD網頁專題作品，主題為酒莊之形象網站。<br />
+                                我負責主導此專案程式碼，建置style_guide、首頁、nav、footer、轉場動畫，且負責大部分頁面切板，以符合設計師之需求。
+                            </p>
+                            <h6>
+                                Tools<span><i class="fas fa-cog"></i></span>
+                            </h6>
+                            <ul class="tools">
+                                <li>RWD</li>
+                                <li>SCSS</li>
+                                <li>Bootstrap</li>
+                                <li>jQuery</li>
+                                <li>lax.js</li>
+                            </ul>
+                        </div>
+                        <!-- END OF CARD-CONTENT -->
+                        <div class="card-img">
+                            <img
+                                src="./img/myWork03.jpg"
+                                alt="Editorial Monitoring Automated Excel Screenshot"
+                            />
+                            <h4 class="heading">
+                                <span
+                                    ><i
+                                        class="fas fa-angle-double-down"
+                                    ></i></span
+                                >馬丁尼茲G.M酒莊
+                            </h4>
+                        </div>
+                    </li>
+                    <!-- END OF CARD -->
+                    <!-- CARD -->
+                    <li class="card">
+                        <!-- CARD-CONTENT -->
+                        <div class="card-content">
+                            <ol>
+                                <li>以Bootstrap製作的RWD的一頁式婚紗網頁。</li>
+                            </ol>
+                            <h6>
+                                Tools<span><i class="fas fa-cog"></i></span>
+                            </h6>
+                            <ul class="tools">
+                                <li>RWD</li>
+                                <li>SCSS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+                        <!-- END OF CARD-CONTENT -->
+                        <div class="card-img">
+                            <img
+                                src="./img/myWork04.jpg"
+                                alt="Editorial Monitoring Automated Excel Screenshot"
+                            />
+                            <h4 class="heading">
+                                <span
+                                    ><i
+                                        class="fas fa-angle-double-down"
+                                    ></i></span
+                                >L&F婚紗
+                            </h4>
+                        </div>
+                    </li>
+                    <!-- END OF CARD -->
+                </ul>
+            </div>
+        </section>
+        <!-- END OF WORK -->
+
+        <!-- FOOTER -->
+        <section
+            id="contact"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+        >
+            <a href="#" id="contact-position" class="a-potision"></a>
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-img">
+                        
+                    </div>
+                    <div class="contact-txt">
+                        <p>
+                            與我聯絡：<a href="myself6331@gmail.com"
+                                >myself6331@gmail.com</a
+                            >
+                        </p>
+                        <p>電話：<a href="tel:+886956592366">0956-592366</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END OF FOOTER -->
+
+        <script src="./js/index.js"></script>
+    </body>
+</html>
