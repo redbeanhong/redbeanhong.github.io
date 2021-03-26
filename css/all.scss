@@ -8,11 +8,14 @@
     left: 0;
 }
 // ---------BANNER & NAV---------
+.mask{
+    background-color: rgba(4, 14, 22, 0.83);
+    padding: 100px 0;
+}
 .banner {
-    background-image: url("../img/banner_photo.jpg");
+    background-image: url("../img/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0;
 }
 
 .navbar {
@@ -161,8 +164,16 @@
             background-color: $color-important;
             margin-right: 10px;
             padding: 10px;
-            float: left;
         }
+
+        .card-github{
+            margin-top: 10px;
+            width: 121px;
+            height: 50px;
+            background-image: url('../img/GitHub-Logo.png');
+            background-size: cover;
+        }
+
     }
 
     .card-img {
@@ -204,6 +215,11 @@
 
     &:hover .card-content > * {
         display: block;
+    }
+
+    &:hover .card-content ul {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     &:hover .heading {
