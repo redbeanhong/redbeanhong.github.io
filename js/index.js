@@ -50,12 +50,13 @@ const skills = [
 ];
 
 let offset = 0;
-let skillOpen= false;
+let skillOpen = false;
+let skillEl = document.querySelector("#skill");
+let skillPosition = getOffsetAOS(skillEl).top - skillEl.offsetHeight / 2;
 
-let skillPosition = document.querySelector("#skill").offsetTop+document.querySelector("#skill-position").offsetTop-300;
-
+// --SKILL CANVAS--
 document.addEventListener("scroll", function () {
-    if (window.scrollY > skillPosition & !skillOpen) {
+    if ((window.scrollY > skillPosition) & !skillOpen) {
         for (const skill of skills) {
             const canvas = document.querySelector(`#${skill.id}`);
             if (!canvas) {
@@ -85,3 +86,22 @@ document.addEventListener("scroll", function () {
         skillOpen = true;
     }
 });
+// --END OF SKILL CANVAS--
+
+// --AOS OFFSET--
+function getOffsetAOS(el) {
+    let _x = 0;
+    let _y = 0;
+
+    while (el && !isNaN(el.offsetLeft) && !isNaN(el.offsetTop)) {
+        _x += el.offsetLeft - (el.tagName != "BODY" ? el.scrollLeft : 0);
+        _y += el.offsetTop - (el.tagName != "BODY" ? el.scrollTop : 0);
+        el = el.offsetParent;
+    }
+
+    return {
+        top: _y,
+        left: _x,
+    };
+}
+// --END OF AOS OFFSET--
