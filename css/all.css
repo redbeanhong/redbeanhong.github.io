@@ -451,6 +451,19 @@ h4 {
 
 .card .card-content .card-github {
   margin-top: 10px;
+  font-size: 50px;
+}
+
+.card .card-content .card-github:hover {
+  color: #f1f1f3;
+}
+
+.card .card-content .card-github:hover .github-img {
+  background-image: url("../img/GitHub_Logo_White.png");
+}
+
+.card .card-content .card-github .github-img {
+  display: block;
   width: 121px;
   height: 50px;
   background-image: url("../img/GitHub-Logo.png");
@@ -504,6 +517,14 @@ h4 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.card:hover .card-github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .card:hover .heading {

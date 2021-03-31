@@ -230,11 +230,24 @@
 
         .card-github {
             margin-top: 10px;
-            width: 121px;
-            height: 50px;
-            background-image: url("../img/GitHub-Logo.png");
-            background-size: cover;
+            font-size: 50px;
+
+            &:hover{
+                color: $color-light;
+                .github-img{
+                    background-image: url("../img/GitHub_Logo_White.png");
+                }
+            }
+            
+            .github-img{
+                display: block;
+                width: 121px;
+                height: 50px;
+                background-image: url("../img/GitHub-Logo.png");
+                background-size: cover;
+            }
         }
+        
     }
 
     .card-img {
@@ -281,6 +294,11 @@
     &:hover .card-content ul {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    &:hover .card-github{
+        display: flex;
+        align-content: center;
     }
 
     &:hover .heading {
