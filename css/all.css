@@ -85,8 +85,14 @@ h4 {
 
 /* 左右留白 */
 .container {
-  width: 1024px;
+  width: 90%;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1024px;
+  }
 }
 
 .bland-bilateral {
@@ -153,10 +159,17 @@ h4 {
 
 .navbar a {
   display: block;
-  padding: 20px;
-  font-size: 20px;
+  padding: 10px;
+  font-size: 18px;
   border-top: 5px solid rgba(44, 44, 44, 0);
   border-bottom: 5px solid rgba(44, 44, 44, 0);
+}
+
+@media screen and (min-width: 768px) {
+  .navbar a {
+    padding: 20px;
+    font-size: 20px;
+  }
 }
 
 .navbar a:hover {
@@ -197,13 +210,27 @@ h4 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .about-content .about-txt {
-  width: 60%;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .about-content .about-txt {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-content .about-txt {
+    width: 60%;
+  }
 }
 
 .about-content .about-txt p:nth-child(2) {
@@ -211,16 +238,44 @@ h4 {
 }
 
 .about-content .about-photo {
-  width: 40%;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-content .about-photo {
+    width: 40%;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-content .about-photo {
+    width: 40%;
+  }
 }
 
 .about-content .about-photo .photo-img {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background-image: url("../img/photo.jpg");
   background-size: cover;
   margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .about-content .about-photo .photo-img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-content .about-photo .photo-img {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .skill {
@@ -231,22 +286,40 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .skills .skills-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 20px 20px;
-  width: 25%;
+  width: 80%;
+}
+
+@media screen and (min-width: 576px) {
+  .skills .skills-item {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .skills .skills-item {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .skills .skills-item {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skills .skills-item {
+    width: 25%;
+  }
 }
 
 .skills .skills-item h3 {
@@ -286,10 +359,22 @@ h4 {
   position: relative;
   margin-bottom: 40px;
   min-height: 550px;
-  width: calc(50% - 20px);
+  width: 100%;
   overflow: auto;
   cursor: pointer;
   background-color: #f79d3c;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    width: calc(50% - 20px);
+  }
 }
 
 .card .card-content {

@@ -105,3 +105,10 @@ function getOffsetAOS(el) {
     };
 }
 // --END OF AOS OFFSET--
+
+// --CSS CHANGE--
+document.querySelector('.photo-img').style.width = `${document.querySelector('.about-photo').offsetWidth*0.8}px `;
+document.querySelector('.photo-img').style.height= `${document.querySelector('.about-photo').offsetWidth*0.8}px `;
+
+
+// --END OF CSS CHANGE--

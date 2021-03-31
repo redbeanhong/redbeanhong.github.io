@@ -76,22 +76,29 @@ h4 {
     color: $color-light;
 }
 
-.color-dark{
+.color-dark {
     color: $color-dark;
 }
 
-.bg-dark{
-    background-color:$color-dark;
+.bg-dark {
+    background-color: $color-dark;
 }
 
-.bg-light{
+.bg-light {
     background-color: $color-light;
 }
 
 /* 左右留白 */
 .container {
-    width: 1024px;
+    width: 90%;
     margin: 0 auto;
+
+    @media screen and(min-width: 768px) {
+    }
+
+    @media screen and(min-width: 1200px) {
+        width: 1024px;
+    }
 }
 
 .bland-bilateral {
