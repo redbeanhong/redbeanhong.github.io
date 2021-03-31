@@ -4,13 +4,19 @@
     width: 1px;
     height: 1px;
     position: absolute;
-    top: -100px;
+    top: -50px;
     left: 0;
+    @media screen and(min-width: 576px) {
+        top: -100px;
+    }
 }
 // ---------BANNER & NAV---------
 .mask {
     background-color: rgba(4, 14, 22, 0.83);
-    padding: 100px 0;
+    padding: 50px 0;
+    @media screen and(min-width: 768px) {
+        padding: 100px 0;
+    }
 }
 .banner {
     background-image: url("../img/banner.jpg");
@@ -20,12 +26,13 @@
 
 .navbar {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
     a {
         display: block;
         padding: 10px;
-        font-size: 18px;
+        font-size: 16px;
         border-top: 5px solid rgba(44, 44, 44, 0);
         border-bottom: 5px solid rgba(44, 44, 44, 0);
         @media screen and(min-width: 768px) {
